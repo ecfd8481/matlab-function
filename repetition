@@ -1,0 +1,15 @@
+for i=1:length(XA)
+    for j=1:length(XA)
+        if i==j
+            continue
+        end
+
+        S = minus(repetition(XA(i)) , repetition(XA(j)));
+
+        if a>det(S*transpose(S))
+            a=det(S*transpose(S));
+            ai=i;
+            aj=j;
+        end
+    end
+end
