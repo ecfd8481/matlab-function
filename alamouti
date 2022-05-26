@@ -1,0 +1,12 @@
+for i=1:4
+    for j=i:4
+        for k=i:4
+            for s = j:4
+                S = alamouti(XA(i),XA(j))-alamouti(XA(k),XA(s));
+                if a>det(S*transpose(S))
+                    a=det(S*transpose(S));
+                end
+            end
+        end
+    end
+end
